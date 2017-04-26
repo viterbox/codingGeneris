@@ -12,6 +12,7 @@ public class Main {
         //
         // Exercise number02 - getFirstMissingPositiveInteger
         //
+        
         int [] unsortedArrayA = new int[3];
         unsortedArrayA[0] = 1;
         unsortedArrayA[1] = 2;
@@ -53,6 +54,4 @@ public class Main {
 
         System.out.println("exercise number04 - getLargestNumberFromIntegerList: " + number4.getLargestNumberFromIntegerList(nonNegativeIntegerList));
     }
-    
-    
 }

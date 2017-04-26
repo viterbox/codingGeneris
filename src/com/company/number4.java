@@ -12,7 +12,6 @@ public class number4 {
         if (floatValue < 1) return floatValue;
 
         return getMinimumFloatValue(floatValue /10);
-
     }
     
     public static int getLargestNumberFromIntegerList(List<Integer> nonNegativeIntegerList){
@@ -35,12 +34,6 @@ public class number4 {
         stringList = stringList.substring(1,stringList.length()-1).replace(", ","");
         
         return Integer.parseInt(stringList);
-        
-        
-        
-        
-        
-        
     }
     
     public static int[] orderArray(int[] arrayTarget){
@@ -79,6 +72,4 @@ public class number4 {
         arrayTarget = orderArray(arrayTarget);
         return findMissingPositiveInteger(arrayTarget, 0, arrayTarget.length);
     }
-    
-    
 }
