@@ -43,5 +43,42 @@ public class number4 {
         
     }
     
+    public static int[] orderArray(int[] arrayTarget){
+        
+        int temp;
+        
+        for(int i =0;i<arrayTarget.length; i++){
+            for(int j =0;j<arrayTarget.length-1; j++){
+                
+                if(arrayTarget[j] > arrayTarget[j+1]){
+                    temp = arrayTarget[j];
+                    arrayTarget[j] = arrayTarget[j+1];
+                    arrayTarget[j+1] = temp;
+                }
+
+            }
+            
+        }
+        
+        return arrayTarget;
+    }
+    
+    public static int findMissingPositiveInteger(int[] arrayTarget, int index, int length){
+        
+        if(index == length-1) {
+            if(arrayTarget[index] < 0) return 1;
+            else return arrayTarget[index] + 1;
+        }
+        else if(arrayTarget[index+1] != arrayTarget[index]+1) return arrayTarget[index] + 1;
+
+        return findMissingPositiveInteger(arrayTarget,index+1,length);
+    }
+    
+    public static int getFirstMissingPositiveInteger(int[] arrayTarget){
+
+        arrayTarget = orderArray(arrayTarget);
+        return findMissingPositiveInteger(arrayTarget, 0, arrayTarget.length);
+    }
+    
     
 }
