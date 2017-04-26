@@ -15,15 +15,15 @@ public class Main {
 
         String targetStringA = "I have a big cow";
 
-        targetStringA = new String(number4.getStringWithReversedWords(targetStringA.toCharArray()));
+        targetStringA = new String(Practices.getStringWithReversedWords(targetStringA.toCharArray()));
         
-        System.out.println("exercise number01 - getStringWithWordsReversed with targetStringA: " + targetStringA);
+        System.out.println("Practice number01 - getStringWithWordsReversed with targetStringA: " + targetStringA);
 
         String targetStringB = "Practice conding. Complete. Come work in the future";
 
-        targetStringB = new String(number4.getStringWithReversedWords(targetStringB.toCharArray()));
+        targetStringB = new String(Practices.getStringWithReversedWords(targetStringB.toCharArray()));
 
-        System.out.println("exercise number01 - getStringWithWordsReversed with targetStringB: " + targetStringB);
+        System.out.println("Practice number01 - getStringWithWordsReversed with targetStringB: " + targetStringB);
 
 
         //
@@ -35,7 +35,7 @@ public class Main {
         unsortedArrayA[1] = 2;
         unsortedArrayA[2] = 0;
 
-        System.out.println("exercise number02 - getFirstMissingPositiveInteger from unsortedArrayA: " + number4.getFirstMissingPositiveInteger(unsortedArrayA));
+        System.out.println("Practice number02 - getFirstMissingPositiveInteger from unsortedArrayA: " + Practices.getFirstMissingPositiveInteger(unsortedArrayA));
 
         int [] unsortedArrayB = new int[4];
         unsortedArrayB[0] = 3;
@@ -43,19 +43,19 @@ public class Main {
         unsortedArrayB[2] = -1;
         unsortedArrayB[2] = 1;
 
-        System.out.println("exercise number02 - getFirstMissingPositiveInteger from unsortedArrayB: " + number4.getFirstMissingPositiveInteger(unsortedArrayB));
+        System.out.println("Practice number02 - getFirstMissingPositiveInteger from unsortedArrayB: " + Practices.getFirstMissingPositiveInteger(unsortedArrayB));
 
         int [] unsortedArrayC = new int[3];
         unsortedArrayC[0] = -8;
         unsortedArrayC[1] = -7;
         unsortedArrayC[2] = -6;
 
-        System.out.println("exercise number02 - getFirstMissingPositiveInteger from unsortedArrayC: " + number4.getFirstMissingPositiveInteger(unsortedArrayC));
+        System.out.println("Practice number02 - getFirstMissingPositiveInteger from unsortedArrayC: " + Practices.getFirstMissingPositiveInteger(unsortedArrayC));
 
         int [] unsortedArrayD = new int[1];
         unsortedArrayD[0] = 1;
 
-        System.out.println("exercise number02 - getFirstMissingPositiveInteger from unsortedArrayD: " + number4.getFirstMissingPositiveInteger(unsortedArrayD));
+        System.out.println("Practice number02 - getFirstMissingPositiveInteger from unsortedArrayD: " + Practices.getFirstMissingPositiveInteger(unsortedArrayD));
 	
       
         //
@@ -69,6 +69,6 @@ public class Main {
         nonNegativeIntegerList.add(5);
         nonNegativeIntegerList.add(9);
 
-        System.out.println("exercise number04 - getLargestNumberFromIntegerList: " + number4.getLargestNumberFromIntegerList(nonNegativeIntegerList));
+        System.out.println("Practice number04 - getLargestNumberFromIntegerList: " + Practices.getLargestNumberFromIntegerList(nonNegativeIntegerList));
     }
 }

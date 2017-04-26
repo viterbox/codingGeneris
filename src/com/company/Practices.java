@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by fmartinez on 4/25/17.
  */
-public class number4 {
+public class Practices {
 
     public static float getMinimumFloatValue(float floatValue){
 
