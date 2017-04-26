@@ -10,6 +10,23 @@ public class Main {
 
 
         //
+        // Exercise number01 - getStringWithWordsReversed
+        //
+
+        String targetStringA = "I have a big cow";
+
+        targetStringA = new String(number4.getStringWithReversedWords(targetStringA.toCharArray()));
+        
+        System.out.println("exercise number01 - getStringWithWordsReversed with targetStringA: " + targetStringA);
+
+        String targetStringB = "Practice conding. Complete. Come work in the future";
+
+        targetStringB = new String(number4.getStringWithReversedWords(targetStringB.toCharArray()));
+
+        System.out.println("exercise number01 - getStringWithWordsReversed with targetStringB: " + targetStringB);
+
+
+        //
         // Exercise number02 - getFirstMissingPositiveInteger
         //
         

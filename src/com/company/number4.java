@@ -72,4 +72,49 @@ public class number4 {
         arrayTarget = orderArray(arrayTarget);
         return findMissingPositiveInteger(arrayTarget, 0, arrayTarget.length);
     }
+    
+    public static char[] customStringReverse(char[] targetCharArray, int beginning, int ending){
+        
+        char temp;
+        int j = ending;
+        
+        if (targetCharArray[beginning] == ' ') beginning++;
+
+        for (int i=beginning; i <= j; i++){
+            temp = targetCharArray[i];
+            targetCharArray[i] = targetCharArray[j];
+            targetCharArray[j] = temp;
+            j-=1;
+        }
+
+        return targetCharArray;
+        
+    }
+    
+    public static char[] getStringWithReversedWords(char[] targetCharArray){
+        
+        int beginning = 0;
+        int ending = targetCharArray.length-1;
+        int charCounter = 0;
+        int wordBeginning;
+        int wordEnding;
+        
+        
+        customStringReverse(targetCharArray,beginning,ending);
+        
+        
+        
+        for(int i=beginning; i <= ending; i++){
+            
+            if(targetCharArray[i] == ' ' || i == ending){
+                wordBeginning = i-charCounter;
+                wordEnding = targetCharArray[i] == ' ' ? wordBeginning+charCounter-1:wordBeginning+charCounter;
+                customStringReverse(targetCharArray,wordBeginning,wordEnding);
+                charCounter = 0;
+            }
+            charCounter++;
+        }
+        
+        return targetCharArray;
+    } 
 }
